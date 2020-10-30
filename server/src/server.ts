@@ -67,7 +67,7 @@ app.post('/', async (req: Request, res: Response) => {
                 })
             }
             else{
-                res.status(422).send({
+                res.status(200).send({
                     message: "Failed",
                     data: isValid.allErrors
                 });
